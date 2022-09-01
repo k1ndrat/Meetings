@@ -17,7 +17,7 @@
     if ($title == '') {
         echo 'Please input meet title';
         exit();
-    } elseif (strlen($title) <= 2 || strlen($title) >= 255) {
+    } elseif (strlen($title) < 2 || strlen($title) > 255) {
         echo 'Your title shorter than 2 or longer than 255';
         exit();
     } elseif ($dateOfMeet == '') {

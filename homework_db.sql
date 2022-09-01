@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Час створення: Вер 01 2022 р., 13:30
+-- Час створення: Вер 01 2022 р., 15:32
 -- Версія сервера: 10.3.22-MariaDB
 -- Версія PHP: 7.1.33
 
@@ -43,8 +43,8 @@ CREATE TABLE `meetings` (
 INSERT INTO `meetings` (`id`, `title`, `date`, `latitude`, `longitude`, `country`) VALUES
 (33, 'Зустріч Сергія та Юрія', '2022-09-23', 50.38906319200994, 30.479681968688954, 'Ukraine'),
 (34, 'Зустріч біологів', '2022-09-01', 44.95313682752884, 34.10617065429687, 'Ukraine'),
-(35, 'Зустріч піротехніків', '2001-09-11', 40.73825543638163, -73.99877166748047, 'United States'),
-(36, '25254', '2022-09-09', 6, 5, 'Anguilla');
+(35, 'Зустріч піротехніків', '2022-09-16', 52.34150510404574, 21.09888458251952, 'Poland'),
+(37, 'Секретна зустріч', '2022-10-01', NULL, NULL, 'Mexico');
 
 --
 -- Індекси збережених таблиць
@@ -64,7 +64,7 @@ ALTER TABLE `meetings`
 -- AUTO_INCREMENT для таблиці `meetings`
 --
 ALTER TABLE `meetings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

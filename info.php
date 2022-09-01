@@ -8,7 +8,6 @@
 
     $meet = $query->fetchAll(PDO::FETCH_ASSOC);
 
-    // print_r($meet[0]);
 ?>
 
 <!DOCTYPE html>
