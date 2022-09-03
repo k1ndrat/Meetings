@@ -11,14 +11,14 @@
         #map {
             height: 500px;
             width: 100%;
-            }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h3 class="text-center mt-5">Create new meeting</h3>
-        <a href="index.php" class="btn btn-link mt-2">Back</a>
+        <a href="/" class="btn btn-link mt-2">Back</a>
         <form action="add.php" method="post" class="d-flex justify-content-between flex-wrap mt-3">
             <input class="form-control" type="text" name="meetTitle" placeholder="Please input meeting title">
 
@@ -286,7 +286,7 @@
 
             <div id="map" class="mt-2"></div>
 
-            <button type="submit" class="btn btn-primary mt-3">Create</button>
+            <button type="submit" class="btn btn-primary mt-3 mb-5">Create</button>
         </form>
     </div>
 
