@@ -39,7 +39,7 @@ $meet = $query->fetchAll(PDO::FETCH_ASSOC);
         <a href="/" class="btn btn-link mt-2">Back</a>
         <form action="update.php" method="post" class="d-flex justify-content-between flex-wrap mt-3">
             <input type="hidden" name="id" value="<?= $meet[0]['id'] ?>">
-            <input class="form-control" type="text" name="meetTitle" placeholder="Please input meeting title" value="<?= $meet[0]['title'] ?>">
+            <input class="form-control" type="text" name="meetTitle" placeholder="Please input meeting title" value="<?= htmlspecialchars($meet[0]['title']) ?>">
 
             <input type="date" class="form-control mt-2" name="meetDate" style="width: 49%; " value="<?= $meet[0]['date'] ?>">
 
@@ -305,7 +305,7 @@ $meet = $query->fetchAll(PDO::FETCH_ASSOC);
 
             <div id="map" class="mt-2"></div>
 
-            <a href='delete.php?id=<?= $id ?>' class="btn btn-danger mt-3">Delete</a>
+            <a href='delete.php?id=<?= $id ?>' class="btn btn-danger mt-3 mb-5">Delete</a>
 
             <button type="submit" class="btn btn-primary mt-3 mb-5">Save</button>
         </form>

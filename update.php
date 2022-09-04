@@ -2,7 +2,7 @@
 
 // get the value from the form
 $id = $_POST['id'];
-$title = $_POST['meetTitle'];
+$title = htmlspecialchars($_POST['meetTitle']);
 $dateOfMeet = $_POST['meetDate'];
 
 $latitude = $_POST['latitude'];
