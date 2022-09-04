@@ -7,4 +7,3 @@ countryOptionList.forEach((countryOption) => {
     countryOption.setAttribute("value", countryOption.innerHTML);
   }
 });
-

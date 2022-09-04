@@ -1,7 +1,7 @@
 <?php
 
 // get the value from the form
-$title = htmlspecialchars($_POST['meetTitle']);
+$title = htmlspecialchars(trim($_POST['meetTitle']));
 $dateOfMeet = $_POST['meetDate'];
 
 $latitude = $_POST['latitude'];
