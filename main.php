@@ -17,7 +17,7 @@ class Page
 
     public function viewOfMeeting($row)
     { ?>
-        <div class="card  mt-4" style="width: 100%;">
+        <div class="card mt-4" style="width: 100%;">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $row['title'] ?></h5>
                 <p class="card-text"><?php echo $row['date'] ?></p>
