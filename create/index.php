@@ -1,3 +1,5 @@
+<!-- controller -->
+
 <?php
 
 require '../components/header.php';
@@ -15,5 +17,5 @@ $btn->getButton();
 $page = new Create\Page;
 $page->getForm();
 
-$footer = new Footer($urlJsList = ["../js/create.js", "../js/country.js"]);
+$footer = new Footer($urlJsList = ["../js/create.js", "../js/country.js", "../js/title_valid.js"]);
 $footer->getFooter();

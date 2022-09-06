@@ -7,7 +7,8 @@ class Page
     public function getForm()
     { ?>
         <form action="add.php" method="post" class="d-flex justify-content-between flex-wrap mt-3">
-            <input class="form-control" type="text" name="meetTitle" placeholder="Please input meeting title">
+            <input class="form-control" type="text" name="meetTitle" id="title" placeholder="Please input meeting title">
+            <div class="alert alert-danger w-100 mb-0 mt-2" role="alert" style='padding-bottom: 5px; padding-top: 5px;'></div>
 
             <input type="date" class="form-control mt-2" name="meetDate" style="width: 49%;">
 

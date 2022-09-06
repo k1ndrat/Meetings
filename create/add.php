@@ -26,6 +26,12 @@ if ($title == '') {
 } elseif ($dateOfMeet == '') {
     echo 'Please input meet date';
     exit();
+} elseif ($latitude < -85.05112873 || $latitude > 85.05112873) {
+    echo 'Your latitude smaller than -85.05112873 or bigger than 85.05112873';
+    exit();
+} elseif ($longitude < -180 || $longitude > 180) {
+    echo 'Your longitude smaller than -180 or bigger than 180';
+    exit();
 } elseif ($country == '') {
     echo 'Please input meet country';
     exit();
