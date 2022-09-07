@@ -38,7 +38,7 @@ if ($title == '') {
 }
 
 // connect the database
-require '../config/connect.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/config/connect.php';
 
 // sql query
 $sql = 'INSERT INTO meetings(title, date, latitude, longitude, country) VALUES(:title, :dateOfMeet, :latitude, :longitude, :country)';

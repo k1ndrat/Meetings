@@ -39,7 +39,7 @@ if ($title == '') {
 }
 
 // connect the database
-require '../config/connect.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/config/connect.php';
 
 // sql query
 $sql = "UPDATE `meetings` SET `title` = ?, `date` = ? ,`latitude` = ? ,`longitude` = ? ,`country` = ? WHERE `meetings`.`id` = ?";

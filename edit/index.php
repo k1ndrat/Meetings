@@ -2,10 +2,10 @@
 
 <?php
 
-require '../components/header.php';
-require '../components/footer.php';
-require 'edit.php';
-require '../components/button.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/components/header.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/components/footer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/edit/edit.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/components/button.php';
 
 // model
 $page = new Edit\Page;

@@ -7,7 +7,7 @@ class Page
     public function getAllMeetings()
     {
         // connect the database
-        require 'config/connect.php';
+        require $_SERVER['DOCUMENT_ROOT'] . '/config/connect.php';
 
         // sql query
         $query = $pdo->query('SELECT * FROM `meetings` ORDER BY id DESC');

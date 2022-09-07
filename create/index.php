@@ -2,10 +2,10 @@
 
 <?php
 
-require '../components/header.php';
-require '../components/footer.php';
-require 'create.php';
-require '../components/button.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/components/header.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/components/footer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/create/create.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/components/button.php';
 
 // view
 $header = new Header($title = 'Create new meeting');

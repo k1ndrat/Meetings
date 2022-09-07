@@ -1,7 +1,7 @@
 <?php
 
 // connect the database
-require '../config/connect.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/config/connect.php';
 
 // get the value from the link
 $id = $_GET['id'];
